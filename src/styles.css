@@ -4,3 +4,7 @@
 .title{
   text-align: center;
 }
+
+:root{
+  --ion-font-family: 'Varela Round', sans-serif;
+}
