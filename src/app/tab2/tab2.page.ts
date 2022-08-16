@@ -11,15 +11,18 @@ export class Tab2Page {
   constructor() {}
 
   doarAlimentos(){
-    window.open('https://www.google.com/maps/search/?api=1&query=ponto+doacao+alimento', '_blank').focus();
+    this.abrirUrl('https://www.google.com/maps/search/?api=1&query=ponto+doacao+alimento');
   }
 
   doarRoupas(){
-    window.open('https://www.google.com/maps/search/?api=1&query=ponto+doacao+roupa', '_blank').focus();
+    this.abrirUrl('https://www.google.com/maps/search/?api=1&query=ponto+doacao+roupa');
   }
 
   doarSangue(){
-    window.open('https://www.google.com/maps/search/?api=1&query=ponto+doacao+sangue', '_blank').focus();
+    this.abrirUrl('https://www.google.com/maps/search/?api=1&query=ponto+doacao+sangue');
   }
 
+  abrirUrl(url: string){
+    window.open(url, '_blank').focus();
+  }
 }
