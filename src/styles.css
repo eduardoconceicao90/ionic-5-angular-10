@@ -37,4 +37,18 @@
   padding-bottom: 0px;
   width: 100%;
   max-width: 400px;
+
+}
+
+ion-thumbnail{
+  animation: animation-img-item 4s infinite alternate;
+}
+
+@keyframes animation-img-item {
+  0%{
+    transform: translate(0px, 5px);
+  }
+  100%{
+    transform: translate(0px, -5px);
+  }
 }
