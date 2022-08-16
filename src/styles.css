@@ -32,14 +32,6 @@
   text-align: center;
 }
 
-.img-item{
-  padding: 20px;
-  padding-bottom: 0px;
-  width: 100%;
-  max-width: 400px;
-
-}
-
 ion-card{
   border-radius: 15px;
   margin-bottom: 5px;
@@ -51,15 +43,39 @@ ion-card:hover{
   transform: scale(1.03);
 }
 
-ion-thumbnail{
+.img-item{
+  padding: 20px;
+  padding-bottom: 0px;
+  width: 100%;
+  max-width: 400px;
+
   animation: animation-img-item 4s infinite alternate;
 }
 
-@keyframes animation-img-item {
-  0%{
+ion-thumbnail{
+  animation: animation-item 4s infinite alternate;
+}
+
+@keyframes animation-item {
+  0% {
     transform: translate(0px, 5px);
   }
-  100%{
+
+  100% {
     transform: translate(0px, -5px);
+  }
+}
+
+@keyframes animation-img-item {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(1deg) scale(1.02);
+  }
+
+  100% {
+    transform: rotate(-1deg) scale(1.04);
   }
 }
